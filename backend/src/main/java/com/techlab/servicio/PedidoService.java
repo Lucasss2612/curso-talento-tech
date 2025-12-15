@@ -59,7 +59,6 @@ public class PedidoService {
             linea.setProducto(producto);
             linea.setCantidad(item.getQuantity());
 
-            // IMPORTANTE: tu Pedido debe tener getLineas()
             pedido.getLineas().add(linea);
 
             total += producto.getPrecio() * item.getQuantity();
